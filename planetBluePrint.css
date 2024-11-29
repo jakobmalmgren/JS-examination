@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.planet-html-template {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url(./img/photo-1534796636912-3b95b3ab5986.avif);
+}
+.fa-times:before {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.planet-img {
+  border-radius: 50%;
+  position: absolute;
+  width: 1278px;
+  height: 1278px;
+  left: -1222px;
+  gap: 0px;
+  opacity: 0px;
+  /* box-shadow: 0px 0px 250px 0px rgba(255, 208, 41, 0.2); */
+  background-color: rgba(66, 142, 212, 1);
+  z-index: 103;
+}
+.planet-img-inner-circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 1378px;
+  height: 1378px;
+  left: -1282px;
+  gap: 0px;
+  opacity: 0px;
+  /* box-shadow: 0px 0px 250px 0px rgba(255, 208, 41, 0.2); */
+  background-color: rgba(66, 142, 212, 0.1);
+  z-index: 102;
+}
+.planet-img-outer-circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 1378px;
+  height: 1378px;
+  left: -1252px;
+  z-index: 101;
+  gap: 0px;
+  opacity: 0px;
+  /* box-shadow: 0px 0px 250px 0px rgba(255, 208, 41, 0.2); */
+  background-color: rgba(66, 142, 212, 0.06);
+}
+
+.planet-container {
+  width: 41%;
+}
+.planet-container__name-wrapper {
+  display: flex;
+  height: 90px;
+  /* background-color: red; */
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.planet-container__name-wrapper__name {
+  font-family: Secular One;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.planet-container__name-wrapper__latin-name {
+  font-family: Lora;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.6em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 208, 41, 1);
+}
+
+.planet-container__about-text {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 27.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+  /* margin-bottom: 15px; */
+  /* background-color: aquamarine; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+}
+
+.planet-container__data-center {
+  display: flex;
+  justify-content: space-between;
+
+  width: 80%;
+  /* height: 130px; */
+  /* background-color: red; */
+
+  margin-top: 20px;
+}
+
+.planet-container__data-bottom__moons {
+  /* background-color: greenyellow; */
+  margin-top: 20px;
+}
+
+.planet-container__data-center__wrapper-left,
+.planet-container__data-center__wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.planet-container__data-center__wrapper-left__circuit-data,
+.planet-container__data-center__wrapper-right__kmr-from-sun-data {
+  margin-bottom: 5px;
+}
+.planet-container__data-center__wrapper-left__max-temp,
+.planet-container__data-center__wrapper-right__min-temp {
+  margin-top: 5px;
+}
+.planet-container__data-center__wrapper-left__circuit,
+.planet-container__data-center__wrapper-left__max-temp,
+.planet-container__data-center__wrapper-right__km-from-sun,
+.planet-container__data-center__wrapper-right__min-temp,
+.planet-container__data-bottom__moons {
+  font-family: Secular One;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.planet-container__data-center__wrapper-left > p,
+.planet-container__data-center__wrapper-right > p,
+.planet-container__data-bottom > p {
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  line-height: 30.6px;
+  letter-spacing: 0.16em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 255, 255, 1);
+}
+.planet-container__data-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+}
