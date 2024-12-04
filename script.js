@@ -1,6 +1,7 @@
 // ----------------Imports--------------------------//
 
-import { generateData, generateHtml } from "./functions.js";
+import { generateHtml } from "./changingEl.js";
+import { generateData } from "./api.js";
 
 // ----------------Imports--------------------------//
 
@@ -37,117 +38,151 @@ const sunEl = document.querySelector(".sun-section");
 // ----------------Code--------------------------//
 
 sunEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[0];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[0];
+      console.log(updatedData);
+    }
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 
 mercuryEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[1];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[1];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 venusEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[2];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[2];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
+
 earthEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[3];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[3];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 marsEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[4];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[4];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 jupiterEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[5];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[5];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 saturnEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[6];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[6];
+      console.log(updatedData);
+    }
+
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 uranusEl.addEventListener("click", async () => {
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[7];
-    console.log(updatedData);
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[7];
+      console.log(updatedData);
+    }
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-  generateHtml(updatedData);
 });
 neptuneEl.addEventListener("click", async () => {
-  console.log("clicked neptune");
+  try {
+    let updatedData;
+    const dataAboutPlanets = await generateData();
 
-  let updatedData;
-  const dataAboutPlanets = await generateData();
+    for (let key in dataAboutPlanets) {
+      let data = dataAboutPlanets[key];
+      updatedData = data[8];
+      console.log(updatedData);
+    }
 
-  for (let key in dataAboutPlanets) {
-    let data = dataAboutPlanets[key];
-    updatedData = data[8];
-    console.log(updatedData);
+    generateHtml(updatedData);
+  } catch (error) {
+    console.log(error);
   }
-
-  generateHtml(updatedData);
 });
 
 // ----------------Code--------------------------//
 
-// här är alla eventlisteneres i denna huvudmodul och jag valde att
-// ha dem här för de representerar skelettet kan man säga
+// här är "main-JS-filen" så jag valde att
+// ha dem här för de representerar skelettet kan man säga.
